@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>M-Kart - Electronics</title>
+
+    <style>
+      .cat-card-shop{
+        transition: all 0.5s;
+      }
+      .cat-card-shop:hover{
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+        transform: scale(1.01);
+        transition: all 0.5s;
+      }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">M-Kart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="mx-2 my-sm-2 my-2">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to M-Kart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an M-Kart Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail2" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail2"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword2" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword2" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword2">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 cat-container">
+
+      <div class="card m-3 cat-card-shop" style="width: 18rem;">
+        <img src="../images/electronics/e1.jpeg" class="card-img-top p-2" alt="Camera">
+        <div class="card-body bg-dark text-white">
+          <h5 class="card-title">Smarty Camera For Home Office Store</h5>
+          <p class="card-text">HD 720p| 30fps</p>
+          <p class="card-text">₹1,399</p>
+          <a href="https://www.flipkart.com/smarty-camera-home-office-store-wireless-dome-pan-tilt-2-way-audio-motion-detection-720p-hd-wi-fi-security-surveillance-system-night-vision-support-micro-sd-card-slot-lan-port-easy-remote-access-android-ios-smartphones-tablets-cctv-cameras-indoor-outdoor-use-wifi-stream-live-video-mobile-laptop-4x-digital-zoom-two-way-dual-antenna-monitor-2-way-chat-02/p/itm930c1148ea6fe?pid=HSAFFKYFG9MAWPWZ&lid=LSTHSAFFKYFG9MAWPWZ94QKQG&marketplace=FLIPKART&store=igc%2Fj69&srno=b_1_27&otracker=browse&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_4_L2_view-all&fm=organic&iid=b73e102d-8e41-4f97-aaca-fae5dcd28c80.HSAFFKYFG9MAWPWZ.SEARCH&ppt=hp&ppn=homepage&ssid=05furaodmo0000001643995499421" class="btn btn-success" target="_blank">Buy</a>
+        </div>
+      </div>
+      <div class="card m-3 cat-card-shop" style="width: 18rem;">
+        <img src="../images/electronics/e2.jpeg" class="card-img-top p-2" alt="Game Box">
+        <div class="card-body bg-dark text-white">
+          <h5 class="card-title">AMKETTE EvoFox Game Box</h5>
+          <p class="card-text">Mali G31 3D GPU | Dual-Band WiFi 802.11ac | 1 x EvoFox Elite Pro Wireless Gamepad, 1 x Voice Enabled Air Remote</p>
+          <p class="card-text">₹9,499</p>
+          <a href="https://www.flipkart.com/amkette-evofox-game-box-32-gb-asphalt-8-badland-beach-buggy-racing-bomb-hunters-bombsquad-brick-breaker-pro-commute-crossyroad-much-more/p/itm2042a5faade9a?pid=GMCFYWY4GHBMYNFH&lid=LSTGMCFYWY4GHBMYNFHM5JT7Z&marketplace=FLIPKART&store=4rr%2Fx1m&srno=b_1_23&otracker=hp_rich_navigation_2_1.navigationCard.RICH_NAVIGATION_Electronics~Gaming~Gaming%2BConsoles_E8WPY497D45H&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_2_L2_view-all&fm=organic&iid=2aa1c8dc-ca63-4674-a2a9-ab58beefa7a2.GMCFYWY4GHBMYNFH.SEARCH&ppt=hp&ppn=homepage&ssid=wae4b2uceo0000001643995706261" class="btn btn-success" target="_blank">Buy</a>
+        </div>
+      </div>
+      <div class="card m-3 cat-card-shop" style="width: 18rem;">
+        <img src="../images/electronics/e3.jpeg" class="card-img-top p-2" alt="acer Aspire 7">
+        <div class="card-body bg-dark text-white">
+          <h5 class="card-title">acer Aspire 7</h5>
+          <p class="card-text">8 GB/512 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA GeForce GTX 1650 A715-75G-50TA/ A715-75G-41G/ A715-75G-52AA Gaming Laptop  (15.6 inch, Black, 2.15 Kg</p>
+          <p class="card-text">₹52,990</p>
+          <a href="https://www.flipkart.com/acer-aspire-7-core-i5-10th-gen-8-gb-512-gb-ssd-windows-10-home-4-graphics-nvidia-geforce-gtx-1650-a715-75g-50ta-a715-75g-41g-a715-75g-52aa-gaming-laptop/p/itm365d5a348ad9c?pid=COMG2KBG2K4GFFF7&lid=LSTCOMG2KBG2K4GFFF78YBPHO&marketplace=FLIPKART&store=4rr%2Ftz1&spotlightTagId=BestvalueId_4rr%2Ftz1&srno=b_1_1&otracker=browse&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_3_L2_view-all&fm=organic&iid=3187e10b-f6ac-43db-9ef3-3330e047379f.COMG2KBG2K4GFFF7.SEARCH&ppt=browse&ppn=browse&ssid=aynh3zqbds0000001643996026338" class="btn btn-success" target="_blank">Buy</a>
+        </div>
+      </div>
+     
+      <div class="card m-3 cat-card-shop" style="width: 18rem;">
+        <img src="../images/electronics/e4.jpeg" class="card-img-top p-2" alt="Projector">
+        <div class="card-body bg-dark text-white">
+          <h5 class="card-title">UNIC UC46 1200 lm LED Corded Portable Projector  (Black)</h5>
+          <p class="card-text">100-240V, 50/60Hz | up to 20000 Hours</p>
+          <p class="card-text">₹5,999</p>
+          <a href="https://www.flipkart.com/unic-uc46-1200-lm-led-corded-portable-projector/p/itmeuatxzzkcs38d?pid=PPJEUATXF4CZWCZK&lid=LSTPPJEUATXF4CZWCZKNRA7MU&marketplace=FLIPKART&store=6bo%2Ftia%2Ffju&srno=b_1_32&otracker=browse&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_5_L2_view-all&fm=organic&iid=c96bc402-7503-4e8d-a235-4b640921341b.PPJEUATXF4CZWCZK.SEARCH&ppt=hp&ppn=homepage&ssid=zsa4yajtfk0000001643996170469" class="btn btn-success" target="_blank">Buy</a>
+        </div>
+      </div>
+     
+    </div>
+
+    <footer class="bg-dark text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-light" href="../index.html">M-Kart</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

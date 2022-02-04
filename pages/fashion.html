@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>M-Kart - Fashion</title>
+
+    <style>
+      .cat-card-shop{
+        transition: all 0.5s;
+      }
+      .cat-card-shop:hover{
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+        transform: scale(1.01);
+        transition: all 0.5s;
+      }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">M-Kart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="mx-2 my-sm-2 my-2">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to M-Kart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an M-Kart Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail2" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail2"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword2" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword2" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword2">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 cat-container">
+
+      <div class="card m-3 cat-card-shop" style="width: 18rem;">
+        <img src="../images/fashion/f1.jpeg" class="card-img-top" alt="men-tshirt">
+        <div class="card-body bg-dark text-white">
+          <h5 class="card-title">Striped Men Round Neck White T-Shirt</h5>
+          <p class="card-text">Round Neck | Full Sleeve | Slim</p>
+          <p class="card-text">₹198</p>
+          <a href="https://www.flipkart.com/try-striped-men-round-neck-white-t-shirt/p/itm728167a4958a8?pid=TSHGYSUTGCFXBFXZ&lid=LSTTSHGYSUTGCFXBFXZOTWVSX&marketplace=FLIPKART&store=clo%2Fash%2Fank%2Fedy&srno=b_1_7&otracker=hp_rich_navigation_2_1.navigationCard.RICH_NAVIGATION_Fashion~Men%2527s%2BTop%2BWear~Men%2527s%2BT-Shirts_IF56C41VGEYS&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_2_L2_view-all&fm=organic&iid=f50d93e4-e1dc-4216-852d-3a6b631bd1fd.TSHGYSUTGCFXBFXZ.SEARCH&ppt=browse&ppn=browse" class="btn btn-success" target="_blank">Buy</a>
+        </div>
+      </div>
+      <div class="card m-3 cat-card-shop" style="width: 18rem;">
+        <img src="../images/fashion/f2.jpeg" class="card-img-top" alt="Dhoti&Kurta">
+        <div class="card-body bg-dark text-white">
+          <h5 class="card-title">Boys Festive & Party Dhoti & Kurta Set</h5>
+          <p class="card-text">1DHOTI, 1KURTA | FTC FASHIONS | WHITEJABLA</p>
+          <p class="card-text">₹119</p>
+          <a href="https://www.flipkart.com/ftc-fashions-boys-festive-party-dhoti-kurta-set/p/itm7215b701de7f0?pid=KETFT8HECNDHEZXZ&lid=LSTKETFT8HECNDHEZXZE1TI4B&marketplace=FLIPKART&store=clo&srno=b_1_15&otracker=browse&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_9_L1_view-all&fm=organic&iid=0f3ab1cd-2c7a-4c51-913b-410315149d41.KETFT8HECNDHEZXZ.SEARCH&ppt=browse&ppn=browse&ssid=n51n7ube5s0000001643984634532" class="btn btn-success" target="_blank">Buy</a>
+        </div>
+      </div>
+      <div class="card m-3 cat-card-shop" style="width: 18rem;">
+        <img src="../images/fashion/f3.jpeg" class="card-img-top" alt="Running Shoes">
+        <div class="card-body bg-dark text-white">
+          <h5 class="card-title">Trendy Sports Running Running Shoes For Men</h5>
+          <p class="card-text">Orange, Grey | Mesh | Trendy Sports Running</p>
+          <p class="card-text">₹249</p>
+          <a href="https://www.flipkart.com/bruton-trendy-sports-running-shoes-men/p/itm6036f913ec47f?pid=SHOGFPAZSUAMGMKG&lid=LSTSHOGFPAZSUAMGMKGVL5RMH&marketplace=FLIPKART&store=osp%2Fcil&srno=b_1_4&otracker=nmenu_sub_Men_0_Footwear&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_5_L1_view-all&fm=organic&iid=27087751-c552-491f-bb17-9ede13d0aeff.SHOGFPAZSUAMGMKG.SEARCH&ppt=browse&ppn=browse&ssid=v831sj21gg0000001643984855276" class="btn btn-success" target="_blank">Buy</a>
+        </div>
+      </div>
+      <div class="card m-3 cat-card-shop" style="width: 18rem;">
+        <img src="../images/fashion/f4.jpeg" class="card-img-top" alt="Watch">
+        <div class="card-body bg-dark text-white">
+          <h5 class="card-title">Arrow Blk Arrow Boys Mens Black Wrist Watch For Boys Analog Watch - For Men</h5>
+          <p class="card-text">Arrow Blk | Thick Straps | Analog</p>
+          <p class="card-text">₹170</p>
+          <a href="https://www.flipkart.com/daniel-jubile-arrow-boys-mens-black-wrist-watch-analog-men/p/itmf727764f51414?pid=WATFNVGWZCTFUSHG&lid=LSTWATFNVGWZCTFUSHGIQUSKK&marketplace=FLIPKART&store=r18%2Ff13&srno=b_1_4&otracker=browse&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_7_L1_view-all&fm=organic&iid=06f880f4-2ac4-4e80-a062-0f786975085e.WATFNVGWZCTFUSHG.SEARCH&ppt=browse&ppn=browse&ssid=v3aueqm5eo0000001643985725632" class="btn btn-success" target="_blank">Buy</a>
+        </div>
+      </div>
+      
+
+    </div>
+
+    <footer class="bg-dark text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-light" href="../index.html">M-Kart</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
